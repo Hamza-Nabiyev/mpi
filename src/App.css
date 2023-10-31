@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+Header {
+  display: flex;
+  height: 60px;
+  background-color: rgb(231, 231, 231);
+  align-items: center;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px) {
+  Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-buttons {
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-buttons {
+    margin-right: 0px;
+  }
+}
+
+.header-button {
+  height: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 12px;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+  font-weight: 590;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: aliceblue;
+}
+
+.logo {
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 0px;
+  }
+}
+
+.categories-content {
+  padding: 10px 100px 10px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .categories-content {
+    padding: none;
+    flex-wrap: wrap;
+  }
+}
+
+.categories-button {
+  margin: 3px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 12px;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+  font-weight: 590;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.categories-button:hover {
+  background-color: aliceblue;
+}
+
+.news-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.news-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.news-card {
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 45%;
+  /* min-width: 30%; */
+  width: auto;
+  min-height: 150px;
+  /* width: 50%; */
+  /* height: 50%; */
+  background-color: rgb(231, 231, 231);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.news-head {
+  margin: 5px 20px;
+}
+
+.main-news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.main-news-card {
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  min-height: 150px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-news-content {
+    padding: 0px 10px;
   }
 }
