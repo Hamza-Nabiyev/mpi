@@ -26,6 +26,7 @@ Header {
 }
 
 .header-button {
+  margin-right: 10px;
   height: 36px;
   padding-left: 20px;
   padding-right: 20px;
@@ -135,4 +136,59 @@ Header {
   .main-news-content {
     padding: 0px 10px;
   }
+}
+
+.reg-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.registration-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.reg-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.reg-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  /* color: #ccc; */
+  background: white;
+}
+.signInButton {
+  width: -webkit-fill-available;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.signInButton:hover {
+  cursor: pointer;
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
